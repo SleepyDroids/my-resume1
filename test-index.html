@@ -5,36 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./test-style.css" />
     <!-- Embedded font from google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
-    <title>Resume 1.1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Resume 1.2</title>
   </head>
   <body>
-
     <!-- Main container to house the entire resume -->
     <main id="main_container">
-
       <!-- Section 1 - includes profile pic, name, job title, information and small mission statement -->
       <header id="section_1">
         <div class="box_1">
           <img
             id="profile_pic"
             src="./images/malenia-icon.webp"
-            alt="picture of Malenia, boss from Elden Ring"
+            alt="Profile picture of the applicant"
           />
-          <h2>Full Name Here</h2>
+          <h2 id="name_title">Full Name Here</h2>
           <p id="role_title">Role/Job Title</p>
         </div>
 
         <div class="box_2">
           <ul>
-            <li>
-              <span class="bold">Full Name:</span> First and Last
-            </li>
-            <li>
-              <span class="bold">DOB:</span> 5/18/1991
-            </li>
+            <li><span class="bold">Full Name:</span> First and Last</li>
+            <li><span class="bold">DOB:</span> 5/18/1991</li>
             <li><span class="bold">Hometown:</span> New York, New York</li>
             <li>
               <span class="bold">Email:</span> <a href="#">contact@gmail.com</a>
@@ -52,11 +49,10 @@
 
         <div class="box_3">
           <p>
-            Malenia, Blade of Miquella and Malenia, Goddess of Rot is a
-            two-phase Demigod Boss in Elden Ring. She is the Empyrean twin
-            sister of Miquella and gained renown for her legendary battle
-            against Starscourge Radahn during the Shattering, in which she
-            unleashed the power of the Scarlet Rot and reduced Caelid to ruins.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            repellendus vero, illum omnis sint, quibusdam itaque neque minima
+            tenetur deleniti quisquam nulla! Facilis quo sint maxime eius
+            similique asperiores itaque.
           </p>
         </div>
       </header>
@@ -66,7 +62,7 @@
       <!-- Section 2 - includes employment and work history -->
       <section id="section_2">
         <div class="history">
-          <h2>Employment</h2>
+          <h2 class="block_title">Employment</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
             magni rem eos voluptate natus. Provident, debitis consequuntur odio
@@ -74,7 +70,7 @@
             quia a enim voluptas.
           </p>
 
-          <h2>Education</h2>
+          <h2 class="block_title">Education</h2>
 
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
@@ -87,18 +83,53 @@
 
       <!-- Section 3 - includes skills and relevant interests -->
       <section id="section_3">
-        <div class="skills"> 
-        <h3>Programming Skills</h3>
-        <p>Will be added later.</p>
+        <div class="skills">
+          <h3>Programming Skills</h3>
+          <label for="file">Wordpress:</label><br />
 
-        <h3>Graphic Skills</h3>
-        <p>Will be added later.</p>
+          <progress id="file" max="100" value="80">80%</progress>
 
-        <h3>Language Skills</h3>
-        <p>Will be added later.</p>
+          <br />
+
+          <label for="file">HTML:</label> <br />
+
+          <progress id="file" max="100" value="94">94%</progress>
+
+          <br />
+
+          <label for="file">CSS:</label> <br />
+
+          <progress id="file" max="100" value="82">82%</progress>
+
+          <br />
+
+          <label for="file">Javascript:</label> <br />
+
+          <progress id="file" max="100" value="77">77%</progress>
+
+          <br />
+
+          <label for="file">Python:</label> <br />
+
+          <progress id="file" max="100" value="65">65%</progress>
+
+          <h3>Graphic Skills</h3>
+          <ul class="skills-list">
+            <li>Adobe Photoshop</li>
+            <li>Adobe Indesign</li>
+            <li>Canva</li>
+            <li>GIMP</li>
+            <li>Figma</li>
+          </ul>
+
+          <h3>Language Skills</h3>
+          <p>Will be added later.</p>
         </div>
       </section>
     </main>
     <!-- End of resume container -->
+
+    <!-- Link to external javascript file -->
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -1,8 +1,17 @@
 body {
-  background-color: #121212;
-  color: #f8f9fa;
-  padding: 50px;
+  background-image: linear-gradient(
+    to right bottom,
+    #59415c,
+    #654e68,
+    #725a75,
+    #7e6882,
+    #8b758f
+  );
+  color: #333;
+  padding: 10px;
   margin: 0;
+  /* Added height to make the gradient stretch to fit the viewport as opposed to repeating the gradient */
+  height: 100vh;
   /* Made the body into a flexbox in order to center the entire resume on screen */
   display: flex;
   justify-content: center;
@@ -24,13 +33,38 @@ body {
   display: none;
 }
 
+#name_title {
+  text-transform: uppercase;
+  padding: 5px;
+}
+
 #role_title {
-  color: aqua;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #6a4c93;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #6a4c93;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #dee2e6;
+  text-shadow: #333333 1px 0 5px;
 }
 
 /* Flexbox container for the entire resume */
 #main_container {
-  background-color: #343a40;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   width: 50%;
   height: auto;
   padding: 20px;
@@ -44,9 +78,11 @@ body {
 
 #profile_pic {
   max-width: 150px;
+  max-height: 150px;
   float: left;
   border-radius: 50%;
-  padding: 10px;
+  padding: 20px;
+  filter: drop-shadow(0 0 0.75rem #333333);
 }
 
 #section_1 {
@@ -55,6 +91,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: space-evenly;
+  padding: 10px;
 }
 
 /* Created separate div boxes inside of Section 1 to set the ideal widths for each block of information */
@@ -77,6 +114,22 @@ body {
   width: 100%;
 }
 
+.block_title::before {
+  content: "˅"; /* The symbol you want to add */
+  color: #dee2e6;
+  margin-right: 10px; /* Optional: space between symbol and text */
+  background-color: #725a75;
+  width: 100%;
+}
+
+.block_title {
+  text-transform: uppercase;
+  background-color: #8b758f;
+  font-weight: normal;
+  padding: 5px;
+  color: #dee2e6;
+}
+
 #section_2 {
   width: 60%;
 }
@@ -86,8 +139,10 @@ body {
 } */
 
 #section_3 {
-  width: 40%;
-  text-align: right;
+  width: 38%;
+  margin: 0;
+  padding-left: 15px;
+  /* text-align: right; */
 }
 
 /* .skills {
