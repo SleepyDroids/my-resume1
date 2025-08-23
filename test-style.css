@@ -1,73 +1,84 @@
 body {
-    background-color: #121212;
-    color: #f8f9fa;
-    padding: 50px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #121212;
+  color: #f8f9fa;
+  padding: 50px;
+  margin: 0;
+  /* Made the body into a flexbox in order to center the entire resume on screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Embedded font settings from google fonts */
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "GRAD" 0;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
+/* Removes divider visibility */
 #main_container hr {
-    display: none;
+  display: none;
 }
 
 #role_title {
-    color:aqua; 
+  color: aqua;
 }
 
+/* Flexbox container for the entire resume */
 #main_container {
-    background-color: #343a40;
-    width: 50%;
-    height: auto;
-    padding: 20px;
-    border-radius: 15px;
-        display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: space-evenly;
+  background-color: #343a40;
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
 }
 
 #profile_pic {
-    max-width: 150px;
-    float: left;
-    border-radius: 50%;
-    padding: 10px;
+  max-width: 150px;
+  float: left;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 #section_1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: space-evenly;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
 }
 
+/* Created separate div boxes inside of Section 1 to set the ideal widths for each block of information */
 .box_1 {
-    width: 60%;
+  width: 60%;
 }
 
 .box_2 {
-    width: 40%;
-    text-align: right;
+  width: 40%;
+  text-align: right;
 }
 
+/* Removes the bullet points and the space left to keep the list clean and organized */
 .box_2 li {
-    list-style-type: none;
-    margin: 0;
+  list-style-type: none;
+  margin: 0;
 }
 
 .box_3 {
-    width: 100%;
+  width: 100%;
 }
 
 #section_2 {
-    width: 60%;
+  width: 60%;
 }
 
 /* .history {
@@ -75,8 +86,8 @@ body {
 } */
 
 #section_3 {
-    width: 40%;
-    text-align: right;
+  width: 40%;
+  text-align: right;
 }
 
 /* .skills {
