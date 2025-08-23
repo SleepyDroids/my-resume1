@@ -12,6 +12,10 @@ body {
     font-weight: bold;
 }
 
+#main_container hr {
+    display: none;
+}
+
 #role_title {
     color:aqua; 
 }
@@ -22,6 +26,11 @@ body {
     height: auto;
     padding: 20px;
     border-radius: 15px;
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
 }
 
 #profile_pic {
@@ -29,7 +38,6 @@ body {
     float: left;
     border-radius: 50%;
     padding: 10px;
-
 }
 
 #section_1 {
@@ -57,3 +65,21 @@ body {
 .box_3 {
     width: 100%;
 }
+
+#section_2 {
+    width: 60%;
+}
+
+/* .history {
+    width: 100%;
+} */
+
+#section_3 {
+    width: 40%;
+    text-align: right;
+}
+
+/* .skills {
+    border: 1px solid red;
+    width: 100%;
+} */
