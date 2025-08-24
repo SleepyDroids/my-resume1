@@ -77,12 +77,22 @@ a:hover {
 }
 
 #profile_pic {
-  max-width: 150px;
-  max-height: 150px;
+  width: 150px;
+  height: 150px;
   float: left;
   border-radius: 50%;
-  padding: 20px;
-  filter: drop-shadow(0 0 0.75rem #333333);
+  margin: 20px;
+  animation: glow 2s infinite alternate;
+}
+
+/* Keyframes for the 'glow' animation, using negative pixels to force the shadow to revert into itself */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px -10px #8a758f;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #8a758f;
+  }
 }
 
 #section_1 {
