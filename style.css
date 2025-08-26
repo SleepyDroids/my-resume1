@@ -9,7 +9,7 @@ body {
   );
   height: 100vh;
   color: #333;
-  padding: 10px;
+  padding: 0;
   margin: 0;
   /* Made the body into a flexbox in order to center the entire resume on screen */
   display: flex;
@@ -75,12 +75,18 @@ a:hover {
   align-items: space-evenly;
 }
 
+@media only screen and (max-width: 600px) {
+  #main_container {
+    width: 438px; 
+  }
+}
+
 #profile_pic {
   width: 150px;
   height: 150px;
   float: left;
   border-radius: 50%;
-  margin: 20px;
+  margin: 5%;
   animation: glow 2s infinite alternate;
 }
 
