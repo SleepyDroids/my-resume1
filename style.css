@@ -7,11 +7,10 @@ body {
     #7e6882,
     #8b758f
   );
+  height: 100vh;
   color: #333;
   padding: 10px;
   margin: 0;
-  /* Added height to make the gradient stretch to fit the viewport as opposed to repeating the gradient */
-  height: 100vh;
   /* Made the body into a flexbox in order to center the entire resume on screen */
   display: flex;
   justify-content: center;
@@ -21,6 +20,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+  font-size: 0.8rem;
   font-variation-settings: "wdth" 100, "GRAD" 0;
 }
 
@@ -70,8 +70,7 @@ a:hover {
   padding: 20px;
   border-radius: 15px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: wrap row;
   justify-content: center;
   align-items: space-evenly;
 }
@@ -99,9 +98,9 @@ a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: space-evenly;
-  padding: 10px;
+  padding: 4%;
 }
 
 /* Created separate div boxes inside of Section 1 to set the ideal widths for each block of information */
@@ -149,10 +148,22 @@ a:hover {
 } */
 
 #section_3 {
-  width: 38%;
-  margin: 0;
-  padding-left: 15px;
-  /* text-align: right; */
+  width: 36%;
+  padding-left: 4%;
+}
+
+.progress_bar {
+  width: 100%;
+  border: none;
+  border-radius: 5%;
+}
+
+.progress_bar::-webkit-progress-bar {
+  background-color: #8a758f;
+}
+
+.progress_bar::-webkit-progress-value {
+  background-color: #654e68;
 }
 
 /* .skills {
